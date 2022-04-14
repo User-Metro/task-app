@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { TaskBanner } from "./components/TaskBanner";
-import { TaskRow } from "./components/TaskRow";
-import { TaskCreator } from "./components/TaskCreator";
-import { VisibilityControl } from "./components/VisibilityControl";
+import { TaskBanner } from "./components/taskBanner";
+import { TaskCreator } from "./components/taskCreator";
+import { TaskRow } from "./components/taskRow";
+import { VisibilityControl } from "./components/visibilityControl";
 
 export default function App() {
   const [userName, setUserName] = useState("Xpectre");
