@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  display: flex;
+  border: none;
+  padding: 1px;
+  width: 100%;
+  box-shadow: none;
+  background-color: var(--blackInputTask);
+  border-radius: 30px;
+  backdrop-filter: blur(40px);
+}
+
+.container:hover{
+  background-color: rgba(77, 75, 75, 0.589);
+  backdrop-filter: blur(40px);
+  cursor: text;
+}
+
+.inputTaskCreator {
+  width: 500px;
+  background-color: var(--blackInputTask);
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  padding-right: 20px;
+  outline: none;
+  border-style: none;
+  letter-spacing: 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.inputTaskCreator::placeholder {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btnTaskCreator{
+  width: 50px;
+  background-color: var(--blackInputTask);
+  color: aliceblue;
+  height: 50px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+}
