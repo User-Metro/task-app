@@ -61,19 +61,20 @@ export default function App() {
         <div className={Styles.ContainerItems}>
           <div>{taskTableRows(false)}</div>
 
-          <div className="bg-secondary text-white text-center p-2">
-            <VisibilityControl
-              description="Completed Tasks"
-              isChecked={showCompleted}
-              callback={(checked) => setshowCompleted(checked)}
-            />
-          </div>
+          <VisibilityControl
+            description="Completed Tasks"
+            isChecked={showCompleted}
+            callback={(checked) => setshowCompleted(checked)}
+          />
 
           {showCompleted && (
             <div className={Styles.DivTaskCompleted}>{taskTableRows(true)}</div>
           )}
 
-          <TaskCreator callback={createNewTask} />
+          <div className={Styles.PositionInputCreator}>
+            <TaskCreator callback={createNewTask}/>
+          </div>
+
         </div>
       </div>
     </div>

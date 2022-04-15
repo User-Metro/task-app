@@ -1,18 +1,18 @@
 .container {
   position: relative;
   display: flex;
-  border: none;
+  border-style: none;
   padding: 1px;
   width: 100%;
   box-shadow: none;
   background-color: var(--blackInputTask);
   border-radius: 30px;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(20px);
 }
 
 .container:hover{
-  background-color: var(--grayHover);
-  backdrop-filter: blur(40px);
+  background-color: var(--whiteCristal);
+  backdrop-filter: blur(20px);
   cursor: text;
 }
 
