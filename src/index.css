@@ -1,8 +1,9 @@
 :root {
   box-sizing: border-box;
   --blackInputTask: rgba(7, 7, 7, 0.705);
-  --grayHover: rgba(59, 56, 56, 0.753);
+  --grayHover: rgba(224, 219, 219, 0.308);
   --changeableColorTask: #fff;
+  --whiteCristal: rgba(255, 255, 255, 0.219);
 }
 
 *,

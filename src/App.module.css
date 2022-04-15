@@ -1,6 +1,9 @@
 .Template{
-  background: aqua;
-  height: 100vh;
+ 
+  background-image: url("./assets/fondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
 }
 
 .Content{
@@ -13,8 +16,19 @@
 
 .ContainerItems{
   width: 600px;
+  height: 600px;
+  background-color: var(--whiteCristal);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .DivTaskCompleted{
   text-decoration:line-through;
+}
+
+.PositionInputCreator{
+  position: absolute;
+  bottom: 20px;
+  width: 580px;
 }
