@@ -1,0 +1,16 @@
+.Template{
+  background: aqua;
+  height: 100vh;
+}
+
+.Content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.ContainerItems{
+  width: 600px;
+}
