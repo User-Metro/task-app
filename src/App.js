@@ -3,6 +3,7 @@ import { TaskBanner } from "./components/taskBanner";
 import { TaskCreator } from "./components/taskCreator";
 import { TaskRow } from "./components/taskRow";
 import { VisibilityControl } from "./components/visibilityControl";
+import styles from "./App.module.css";
 
 export default function App() {
   const [userName, setUserName] = useState("Xpectre");
@@ -53,8 +54,8 @@ export default function App() {
       ));
 
   return (
-    <div className="App">
-      <div>
+    <div className={styles.template}>
+      <div className={styles.content}>
         <TaskBanner userName={userName} taskItems={taskItems} />
         <div className="container-fluid">
           <TaskCreator callback={createNewTask} />
