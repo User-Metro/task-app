@@ -11,7 +11,7 @@
 }
 
 .container:hover{
-  background-color: rgba(77, 75, 75, 0.589);
+  background-color: var(--grayHover);
   backdrop-filter: blur(40px);
   cursor: text;
 }
