@@ -3,10 +3,10 @@ import Styles from "./VisibilityControl.module.css";
 
 export const VisibilityControl = props => {
   return (
-    <div className="form-check">
+    <div className={Styles.DivTaskCompleted}>
       <input
         type="checkbox"
-        className="form-check-input"
+        className={Styles.InputTaskCompleted}
         checked={props.isChecked}
         onChange={ e => props.callback(e.target.checked)}
       />
