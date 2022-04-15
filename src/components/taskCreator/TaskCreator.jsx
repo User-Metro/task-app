@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./TaskCreator.module.css";
+import Styles from "./TaskCreator.module.css";
 
 export const TaskCreator = (props) => {
   const [newTaskName, setNewTaskName] = useState("");
@@ -12,14 +12,14 @@ export const TaskCreator = (props) => {
   };
 
   return (
-    <div className={styles.container}>
-      <button className={styles.btnTaskCreator} onClick={createNewTask}>
+    <div className={Styles.container}>
+      <button className={Styles.btnTaskCreator} onClick={createNewTask}>
         Add
       </button>
       <input
         type="text"
         placeholder="Agregar una nueva tarea"
-        className={styles.inputTaskCreator}
+        className={Styles.inputTaskCreator}
         value={newTaskName}
         onChange={updateNewTaskValue}
       />

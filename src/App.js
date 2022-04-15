@@ -3,7 +3,7 @@ import { TaskBanner } from "./components/taskBanner";
 import { TaskCreator } from "./components/taskCreator";
 import { TaskRow } from "./components/taskRow";
 import { VisibilityControl } from "./components/visibilityControl";
-import styles from "./App.module.css";
+import Styles from "./App.module.css";
 
 export default function App() {
   const [userName, setUserName] = useState("Xpectre");
@@ -20,7 +20,7 @@ export default function App() {
     if (data != null) {
       setTaskItems(JSON.parse(data));
     } else {
-      setUserName("fazt");
+      setUserName("Xpectre");
       setTaskItems([
         { name: "Task One", done: false },
         { name: "Task Two", done: false },
@@ -54,10 +54,10 @@ export default function App() {
       ));
 
   return (
-    <div className={styles.template}>
-      <div className={styles.content}>
+    <div className={Styles.Template}>
+      <div className={Styles.Content}>
         <TaskBanner userName={userName} taskItems={taskItems} />
-        <div className="container-fluid">
+        <div className={Styles.ContainerItems}>
           <TaskCreator callback={createNewTask} />
           <table className="table table-striped table-bordered">
             <thead>
