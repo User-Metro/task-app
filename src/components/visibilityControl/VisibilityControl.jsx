@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from "./VisibilityControl.module.css";
 
 export const VisibilityControl = props => {
   return (
