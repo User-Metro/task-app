@@ -2,7 +2,7 @@
   box-sizing: border-box;
   --blackInputTask: rgba(7, 7, 7, 0.705);
   --grayHover: rgba(59, 56, 56, 0.753);
-  --jadeColor: linear-gradient(180deg, #2a0944 0%, #a12568 100%);
+  --changeableColorTask: #fff;
 }
 
 *,

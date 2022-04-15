@@ -14,3 +14,7 @@
 .ContainerItems{
   width: 600px;
 }
+
+.DivTaskCompleted{
+  text-decoration:line-through;
+}
