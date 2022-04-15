@@ -3,7 +3,7 @@
   margin-bottom: 5px;
   width: fit-content;
   padding: 8px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--changeableColorTask);
   border-radius: 20px;
 }
 

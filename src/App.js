@@ -57,17 +57,10 @@ export default function App() {
     <div className={Styles.Template}>
       <div className={Styles.Content}>
         <TaskBanner userName={userName} taskItems={taskItems} />
+
         <div className={Styles.ContainerItems}>
-          <TaskCreator callback={createNewTask} />
-          <table className="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th>Description</th>
-                <th>Done</th>
-              </tr>
-            </thead>
-            <tbody>{taskTableRows(false)}</tbody>
-          </table>
+          <div>{taskTableRows(false)}</div>
+
           <div className="bg-secondary text-white text-center p-2">
             <VisibilityControl
               description="Completed Tasks"
@@ -75,17 +68,12 @@ export default function App() {
               callback={(checked) => setshowCompleted(checked)}
             />
           </div>
+
           {showCompleted && (
-            <table className="table table-striped table-bordered">
-              <thead>
-                <tr>
-                  <th>Description</th>
-                  <th>Done</th>
-                </tr>
-              </thead>
-              <tbody>{taskTableRows(true)}</tbody>
-            </table>
+            <div className={Styles.DivTaskCompleted}>{taskTableRows(true)}</div>
           )}
+
+          <TaskCreator callback={createNewTask} />
         </div>
       </div>
     </div>
