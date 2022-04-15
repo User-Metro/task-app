@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./TaskRow.module.css"
 
 export const TaskRow = props => (
   <tr key={props.task.name}>
@@ -7,7 +6,6 @@ export const TaskRow = props => (
     <td>
       <input
         type="checkbox"
-        className={styles.InputRow}
         checked={props.task.done}
         onChange={() => props.toggleTask(props.task)}
       />
