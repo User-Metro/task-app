@@ -5,6 +5,8 @@ import { TaskRow } from "./components/taskRow";
 import { VisibilityControl } from "./components/visibilityControl";
 import Styles from "./App.module.css";
 
+import Decoration from "./components/decoration/Decoration.jsx";
+
 export default function App() {
   const [userName, setUserName] = useState("Xpectre");
   const [taskItems, setTaskItems] = useState([
@@ -55,6 +57,7 @@ export default function App() {
 
   return (
     <div className={Styles.Template}>
+      <Decoration />
       <div className={Styles.Content}>
         <TaskBanner userName={userName} taskItems={taskItems} />
 

@@ -1,9 +1,11 @@
 :root {
   box-sizing: border-box;
-  --blackInputTask: rgba(7, 7, 7, 0.705);
   --grayHover: rgba(224, 219, 219, 0.308);
   --changeableColorTask: #fff;
   --whiteCristal: rgba(255, 255, 255, 0.219);
+  --colorPurpleBlueGradient:linear-gradient(180deg, #2A0944 0%, #12122C 100%);
+  --colorYellowOrangeGradient: linear-gradient(211.52deg, #F7AF17 13.53%, #FF2625 84.56%);
+  --bgCuadro2: linear-gradient(211.52deg, #B15E8B 13.53%, #461E6F 84.56%);
 }
 
 *,

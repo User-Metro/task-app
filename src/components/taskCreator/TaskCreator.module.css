@@ -5,20 +5,20 @@
   padding: 1px;
   width: 100%;
   box-shadow: none;
-  background-color: var(--blackInputTask);
+  background: var(--colorYellowOrangeGradient);
   border-radius: 30px;
   backdrop-filter: blur(20px);
 }
 
 .container:hover{
-  background-color: var(--whiteCristal);
+  background: var(--colorPurpleBlueGradient);
   backdrop-filter: blur(20px);
   cursor: text;
 }
 
 .inputTaskCreator {
   width: 500px;
-  background-color: var(--blackInputTask);
+  background: var(--colorYellowOrangeGradient);
   color: white;
   width: 100%;
   font-size: 16px;
@@ -36,11 +36,18 @@
   font-size: 16px;
   letter-spacing: 2px;
   font-weight: 100;
+  text-align: center;
+}
+
+.inputTaskCreator:hover{
+  background: var(--colorPurpleBlueGradient);
+  backdrop-filter: blur(20px);
+  cursor: text;
 }
 
 .btnTaskCreator{
   width: 50px;
-  background-color: var(--blackInputTask);
+  background: #FF2625;
   color: aliceblue;
   height: 50px;
   border-style: none;
@@ -48,7 +55,12 @@
   font-weight: bold;
   outline: none;
   cursor: pointer;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  
+  border-radius: 30px;
   padding-left: 20px;
+  padding-right: 60px;
+}
+
+.container .btnTaskCreator:hover ~ .inputTaskCreator{
+  background: var(--colorPurpleBlueGradient);
 }
